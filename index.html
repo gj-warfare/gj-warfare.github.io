@@ -13,14 +13,12 @@
     <p>Select a version to download below:</p>
 
     <div class="download-section">
-      <label for="download-select" class="download-label">Choose a version:</label>
-      <select id="download-select" class="download-dropdown">
-        <option value="" disabled selected>Select version</option>
-        <option value="v1.0">Version 1.0</option>
-        <option value="v2.0">Version 2.0</option>
-        <option value="v3.0">Version 3.0</option>
-      </select>
-      <button class="download-button" onclick="downloadVersion()">Download</button>
+      <button class="download-button" onclick="toggleDropdown()">Download ▼</button>
+      <div id="dropdown-menu" class="dropdown-menu">
+        <a href="downloads/version1.zip">Version 1.0</a>
+        <a href="downloads/version2.zip">Version 2.0</a>
+        <a href="downloads/version3.zip">Version 3.0</a>
+      </div>
     </div>
   </div>
 
