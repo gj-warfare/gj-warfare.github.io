@@ -75,3 +75,38 @@ body {
 .video-trigger:hover {
   opacity: 0.8;
 }
+
+/* Dropdown menu */
+.dropdown {
+  margin-top: 1.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown select {
+  appearance: none;
+  background-color: #018BAA;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown select:hover {
+  background-color: #016f88;
+}
+
+.dropdown::after {
+  content: "▼";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: white;
+  font-size: 0.8rem;
+}
